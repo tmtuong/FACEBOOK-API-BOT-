@@ -1,9 +1,18 @@
 # FACEBOOK-API-BOT-
 
-***IMPORTANT NOTE: TẤT CẢ QUERY DÙNG ĐỂ TRUY VẤN DỮ LIỆU CÓ THẺ DÙNG TRỰC TIẾP TRÊN WEB (KHÔNG CẦN THÔNG QUA Ô TRUY VẤN Ở https://developers.facebook.com/tools/explorer/) BẰNG CÁCH THÊM ĐƯỜNG DẪN GRAPH API (https://graph.facebook.com/v15.0/) Ở ĐẦU.
+## Tổng quan về Facebook API Marketing 
+
+Quảng cáo Facebook là một trong những lựa chọn hàng đầu của các doanh nghiệp, tổ chức và cá nhân khi muốn thực hiện các chiến dịch marketing trên nền tảng mạng xã hội. Facebook Ads cũng cung cấp các tính năng để theo dõi Ads Performance trên nền trang của Facebook Ads, tuy nhiên việc lấy dữ liệu từ đó về máy tính cá nhân/ hệ thống lưu trữ của doanh nghiệp vẫn chưa được Facebook hỗ trợ. Có 2 lựa chọn cho công ty nếu muốn lưu lại dữ liệu từ hoạt quảng cáo vào hệ thống lưu trữ của họ.
+
+- Một là, dùng các phần mềm do bên thứ 3 cung cấp: **Two Minutes Report, SuperMetrics** và trả phí hằng tháng.
+
+- Hai là, tự động hóa quá trình này bằng cách xây dựng một tools riêng để kéo dữ liệu từ Facebook API (API miễn phí do Facebook cung cấp). **Resporitory này là một dự án lấy dữ liệu từ Facebook Ads bằng cách kết nối API thông qua ngôn ngữ lập trình Python**.
+
+Facebook API Marketing là API dựa trên HTTP mà bạn có thể dùng để truy vấn dữ liệu, tạo cũng như quản lý quảng cáo và thực hiện nhiều tác vụ khác theo lập trình. Vì dựa trên HTTP nên API này hoạt động với bất kỳ ngôn ngữ hoặc phần mềm nào hỗ trợ HTTP, bao gồm cả cURL và hầu hết mọi trình duyệt web hiện đại. API Marketing được xây dựng dựa trên API Đồ thị của Facebook nên được gọi là Graph API và hầu hết mọi yêu cầu đều được chuyển vào URL lưu trữ graph.facebook.com.
+
+***IMPORTANT NOTE: TẤT CẢ QUERY DÙNG ĐỂ TRUY VẤN DỮ LIỆU CÓ THẺ DÙNG TRỰC TIẾP TRÊN WEB (KHÔNG CẦN THÔNG QUA Ô TRUY VẤN Ở https://developers.facebook.com/tools/explorer/) BẰNG CÁCH THÊM ĐƯỜNG DẪN GRAPH API (https://graph.facebook.com/v15.0/) Ở ĐẦU.***
 
 ![image](https://user-images.githubusercontent.com/117967392/212632515-7934b03f-dde6-4121-8284-15afe8eb97ed.png)
-
 
 ## Lấy các thông tin cần thiết để requests
 Để lấy được dữ liệu từ Facebook API trước tiên cần truy cập vào https://developers.facebook.com/apps/?show_reminder=true để kiểm tra có ứng dụng chưa. Nếu chưa cần tạo một ứng dụng mới, thiết lập API Marketing và chia sẻ các quyền liên quan đến đọc và lấy dữ liệu.
