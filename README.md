@@ -151,7 +151,7 @@ Cú pháp truy vấn: **{ad_id}?fields=adcreatives{body,effective_object_story_i
 
 ![image](https://user-images.githubusercontent.com/117967392/212641504-3a5394aa-2726-40cc-8d58-248071442fec.png)
 
-## Refresh rate:
+## Refresh rate
 Dữ liệu từ FB Ads và FB Page sẽ được chạy liên tục và refresh **1 tiếng 1 lần**. Update_account_id sẽ được chạy **thủ công** hoặc **1 ngày 1 lần**.
 Thời gian chạy:
 - FB_Ads_API: 17 phút
