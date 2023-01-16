@@ -133,7 +133,7 @@ Cú pháp dùng để truy vấn: **{Adaccount_id}/insights/?level=ad&fields=ad_
 
 Có tất cả 4 level để lấy về: **Adaccount -> Campaign -> Adset -> Ad**, ở dự án này sẽ lấy ở level Ad. Level nhỏ nhất sẽ kế thừa tất cả các thông tin ở các level trên (account_name, campaign_name, adset_name)
 
-![image](https://user-images.githubusercontent.com/117967392/212640681-16ece380-17a2-4df9-abd0-70ef215377da.png)
+![image](https://user-images.githubusercontent.com/117967392/212660596-42eda1dd-fc66-4ed3-89e3-22aedd14997d.png)
 
 Vì dữ liệu được lấy **daily** nên parameters date_start và date_stop sẽ giống nhau. Sử dụng thư viện **facebook-business** các trường sẽ được tách ra thành fields (các trường cần trả về) và params (parameters truyền vào).
 
