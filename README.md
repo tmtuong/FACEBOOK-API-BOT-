@@ -41,7 +41,6 @@ Cũng tương tự mã người dùng, mỗi Page cũng yêu cầu **Mã truy c�
 ***Cụ thể hơn về cách 2***
 
 Truy cập đến dữ liệu mong muốn bằng cách sử dụng Graph API. Cụ thể hơn, để truy cập vào nhánh các Page do tài khoản Facebook quản lý, sẽ truy cập vào **me (tài khoản này) -> accounts (các Page do tài khoản quản lý) -> {access_token, id, name} (các trường mong muốn lấy ra)**
-![image](https://user-images.githubusercontent.com/117967392/212623494-199f0596-3507-41af-8ad4-b8808d39672b.png)
-
+![image](https://user-images.githubusercontent.com/117967392/212624462-c8eec2c0-9046-4b1a-b19b-df54962f98cd.png)
 Cú pháp để nhập vào ô truy vấn là 
 
