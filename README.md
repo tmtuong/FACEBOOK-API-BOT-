@@ -1,6 +1,7 @@
 # FACEBOOK-API-BOT-
 
 ***IMPORTANT NOTE: TẤT CẢ QUERY DÙNG ĐỂ TRUY VẤN DỮ LIỆU CÓ THẺ DÙNG TRỰC TIẾP TRÊN WEB (KHÔNG CẦN THÔNG QUA Ô TRUY VẤN Ở https://developers.facebook.com/tools/explorer/) BẰNG CÁCH THÊM ĐƯỜNG DẪN GRAPH API (https://graph.facebook.com/v15.0/) Ở ĐẦU.
+
 ![image](https://user-images.githubusercontent.com/117967392/212632515-7934b03f-dde6-4121-8284-15afe8eb97ed.png)
 
 
