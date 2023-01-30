@@ -160,9 +160,14 @@ Cú pháp truy vấn: **{ad_id}?fields=adcreatives{body,effective_object_story_i
 
 ![image](https://user-images.githubusercontent.com/117967392/212641504-3a5394aa-2726-40cc-8d58-248071442fec.png)
 
+##Source code summary:
+- FB_Ads_API_daily: Chạy liên tục để lấy và refresh dữ liệu FB Ads trong ngày. Thời gian chạy tuỳ vào lượng Ads chạy trong ngày đó.
+- FB_Ads_API_backup: Chức năng để lấy dữ liệu FB Ads như FB_Ads_API_daily, tuy nhiên sẽ chạy cả lifetime. Thời gian chạy > 30p. Chỉ dùng trong trường hợp mất dữ liệu cũ.
+- FB_Page_API: Chạy liên tục để láy dữ liệu FB Page, vì dữ liệu ít nên lấy cả lifetime (tính từ 2022-10-01). Thời gian chạy 2 phút.
+- Update_account_id: Chạy khi được báo là đã có update trong tài khoản chạy ad. Thời gian chạy 2 phút.
+
 ## Refresh rate
-Dữ liệu từ FB Ads và FB Page sẽ được chạy liên tục và refresh **1 tiếng 1 lần**. Update_account_id sẽ được chạy **thủ công** hoặc **1 ngày 1 lần**.
-Thời gian chạy:
-- FB_Ads_API: 17 phút
-- FB_Page_API: 2 phút
-- Update_account_id: 2 phút
+- Dữ liệu từ FB Page sẽ được chạy liên tục và refresh **1 tiếng 1 lần**.
+- Dữ liệu từ FB Ads (FB_Ads_API_daily) sẽ được chạy liên tục và refresh **30 phút 1 lần**. 
+- Update_account_id sẽ được chạy **thủ công** hoặc **1 ngày 1 lần**.
+- Trong trường hợp data cũ bị mất, chạy file FB_Ads_API_backup **thủ công** dể lấy lại dữ liệu.
