@@ -75,6 +75,8 @@ Có 4 loại dữ liệu trên trang mà dự án này quan tâm là:
 
 **4. new_conversation_unique (lượt tin nhắn gửi đến - chỉ tính user mới)**
 
+**5. total_conversations (số người nhắn tới page)**
+
 page_name đã lấy được khi lấy **Mã truy cập trang** trước đó.
 
 date, page_likes_unique, new_conversation_unique sẽ được lấy bằng cách truy vấn vào **insights** từ mã truy cập trang.
@@ -88,6 +90,8 @@ date, page_likes_unique, new_conversation_unique sẽ được lấy bằng các
 ![image](https://user-images.githubusercontent.com/117967392/212629498-735e70c2-6245-4af1-a42f-1fa4c89e6eda.png)
 
 - date có thể được lấy về từ 1 trong 2 cú pháp trên, vì tất cả giá trị trả về đều kèm theo ngày.
+
+- Cú pháp dùng để truy vấn **total_conversations**: **me?fields=conversations.limit(499)**, sau đó nhóm theo ngày (date) và page_name đếm số hội thoại -> Thu được số hội thoại trong ngày.
 
 Lưu ý: since = {start} và until = {end} là 2 parameters truyền vào để thay đổi khoảng thời gian dữ liệu lấy về. access_token={access_token} là mã truy cập **trang** đã lấy trước đó, mã này dùng để phân biệt các trang nên mỗi trang sẽ có một access_token khác nhau.
 
